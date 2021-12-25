@@ -1,0 +1,35 @@
+p.initial.deletion, p.initial.replacement {
+    color: #D62C2C;
+    text-decoration-line: line-through;
+}
+
+p.initial.insertion {
+    opacity: 0;
+    pointer-events: none;
+}
+
+p.initial.nochange {
+    color: white;
+}
+
+p.final.deletion {
+    opacity: 0;
+    pointer-events: none;
+}
+
+p.final.insertion, p.final.replacement {
+    color: #28EC08;
+}
+
+p.final.nochange {
+    color: white;
+}
+
+.changeBlock {
+    display: flex;
+    justify-content: center;
+
+    .initial, .final {
+        flex-basis: 50%;
+    }
+}

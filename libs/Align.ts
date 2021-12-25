@@ -43,6 +43,7 @@ const align = (initial: string[], final: string[]): Change[] => {
         }
         else {
             let search_val: number = dp[r][c] - 1;
+
             if (c > 0 && search_val == dp[r][c - 1]) {
                 changes.push({
                     initial: i,
