@@ -12,8 +12,6 @@ const ChangesLayout: NextPage<Props> = ({ initial, final }) => {
 
     const changes = align(initial, final);
 
-    console.log(styles);
-
     return (
         <div>
             {

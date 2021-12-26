@@ -22,8 +22,8 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>GitSim - Document Changes Tracker</title>
-                <meta name="description" content="GitSim - Document Changes Tracker" />
+                <title>DocFlow - Document Changes Tracker</title>
+                <meta name="description" content="DocFlow - Document Changes Tracker" />
             </Head>
             <PageHeader />
             <main>

@@ -4,7 +4,7 @@ import styles from '../styles/PageHeader.module.scss'
 const PageHeader: NextComponentType = () => {
   return (
     <header className={styles.header}>
-        <h1>GITSIM</h1>
+        <h1>DocFlow</h1>
     </header>
   )
 }
