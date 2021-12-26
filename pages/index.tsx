@@ -7,15 +7,19 @@ import ChangesLayout from '../components/ChangesLayout';
 
 const initial = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit.",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",
+    "This is a Smart Document Comparision",
 ]
 
 const final = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. NEC purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit.",
-    "Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",    
+    "Vel, auctor aliquet duis dapibus. Tellus cursus faucibus vitae nunc nec purus enim. Massa eleifend mattis blandit vitae elit. Cras convallis posuere sapien tristique massa eget.",
+    "This is  Smart Document Comparision Algorithm",
 ]
 
 const Home: NextPage = () => {

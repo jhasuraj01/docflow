@@ -1,27 +1,29 @@
-p.initial.deletion, p.initial.replacement {
+p.initial.deletion, p.initial.replacement,
+p.initial .deletion, p.initial .replacement {
     color: #D62C2C;
     text-decoration-line: line-through;
 }
 
-p.initial.insertion {
+p.initial.insertion, p.initial .insertion {
     opacity: 0;
     pointer-events: none;
 }
 
-p.initial.nochange {
+p.initial.nochange, p.initial .nochange {
     color: white;
 }
 
-p.final.deletion {
+p.final.deletion, p.final .deletion {
     opacity: 0;
     pointer-events: none;
 }
 
-p.final.insertion, p.final.replacement {
+p.final.insertion, p.final .replacement, 
+p.final .insertion, p.final .replacement {
     color: #28EC08;
 }
 
-p.final.nochange {
+p.final.nochange, p.final .nochange {
     color: white;
 }
 

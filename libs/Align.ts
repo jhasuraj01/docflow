@@ -1,4 +1,4 @@
-interface Change {
+export interface Change {
     initial: string;
     final: string;
     type: "nochange" | "replacement" | "insertion" | "deletion"
