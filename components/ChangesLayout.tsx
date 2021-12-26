@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import align from '../libs/Align';
 import compareText from '../libs/CompareText';
 import styles from '../styles/ChangesLayout.module.scss';
 
@@ -10,7 +9,6 @@ interface Props {
 
 const ChangesLayout: NextPage<Props> = ({ initial, final }) => {
 
-    const changes = align(initial, final);
     const deepChanges = compareText(initial, final);
 
     return (
