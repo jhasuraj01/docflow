@@ -16,7 +16,7 @@ const compare = (initial: string[], final: string[]): TextChange[] => {
 
     alignedText.forEach(alignment => {
         if (alignment.type == "replacement") {
-            const paragraphAlignment = align(alignment.initial.split(""), alignment.final.split(""));
+            const paragraphAlignment = align(alignment.initial.split(" "), alignment.final.split(" "));
             textChange.push({
                 initial: undefined,
                 final: undefined,

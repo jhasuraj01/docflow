@@ -1,37 +1,87 @@
-p.initial.deletion, p.initial.replacement,
-p.initial .deletion, p.initial .replacement {
+.deletion, .replacement {
     color: #D62C2C;
     text-decoration-line: line-through;
 }
-
-p.initial.insertion, p.initial .insertion {
-    opacity: 0;
-    pointer-events: none;
+div.initial.deletion, div.initial.replacement {
+    color: white;
+    background-color: #D62C2C;
+    text-decoration: none;
 }
 
-p.initial.nochange, p.initial .nochange {
+div.final.insertion, div.final {
+    .insertion, .replacement {
+        color: #28EC08;
+        text-decoration: none;
+    }
+    color: white;
+    background-color: #28EC08;
+}
+
+div.initial.nochange, div.initial .nochange {
     color: white;
 }
 
-p.final.deletion, p.final .deletion {
-    opacity: 0;
-    pointer-events: none;
-}
-
-p.final.insertion, p.final .replacement, 
-p.final .insertion, p.final .replacement {
-    color: #28EC08;
-}
-
-p.final.nochange, p.final .nochange {
+div.final.nochange, div.final .nochange {
     color: white;
 }
 
 .changeBlock {
     display: flex;
-    justify-content: center;
+    gap: 32px;
+    margin: 0 32px;
+    justify-content: stretch;
+    &>div {
+        box-sizing: border-box;
+        color: white;
+        flex-basis: 50%;
+    }
+
+    .header {
+        background-color: #4D4D4D;
+        padding: 8px;
+        text-align: center;
+        font-size: 22px;
+        border-radius: 8px 8px 0 0;
+    }
 
     .initial, .final {
         flex-basis: 50%;
+        padding: 12px 24px;
+        background-color: #404040;
+        cursor: text;
+    }
+    &:nth-child(2) {
+        .initial, .final {
+            padding-top: 24px;
+        }
+    }
+
+    &:last-child {
+        .initial, .final {
+            border-radius: 0 0 8px 8px;
+            padding-bottom: 24px;
+        }
+        margin-bottom: 100px;
+    }
+
+
+    @media (max-width: 500px) {
+        gap: 8px;
+        margin: 0 8px;
+
+        .initial, .final {
+            padding: 6px 8px;
+        }
+        &:nth-child(2) {
+            .initial, .final {
+                padding-top: 12px;
+            }
+        }
+
+        &:last-child {
+            .initial, .final {
+                padding-bottom: 12px;
+            }
+        }
     }
 }

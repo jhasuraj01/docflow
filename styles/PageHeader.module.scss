@@ -1,13 +1,29 @@
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     height: 72px;
+    padding: 0 36px;
+    background-color: #404040;
+    margin-bottom: 32px;
 
     h1 {
         padding: 0;
         margin: 0;
         font-size: 24px;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: turquoise;
+        width: 108px;
+        height: 48px;
+        border: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        font-size: 16px;
     }
 }

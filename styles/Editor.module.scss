@@ -1,0 +1,57 @@
+.wrapper {
+    display: flex;
+    gap: 32px;
+    margin: 0 32px;
+    justify-content: stretch;
+    &>div {
+        box-sizing: border-box;
+        color: white;
+        flex-basis: 50%;
+    }
+}
+
+.editor {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.header {
+    background-color: #4D4D4D;
+    padding: 8px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #404040;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        gap: 8px;
+        margin: 0 8px;
+    }
+    
+    .editor {
+        padding: 12px 8px;
+        gap: 12px;
+    }
+    
+    .header {
+        padding: 8px;
+    }
+    
+    .container {
+        border-radius: 8px;
+    }
+}
